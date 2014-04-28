@@ -1,0 +1,70 @@
+@import "colors";
+@import "utils";
+@import "css3_anim";
+@import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0-rc2/css/bootstrap-glyphicons.css"); /* TODO: add : "AddType application/font-woff .woff" in httpd.conf of Apache server's config */
+@import "../assets/font-awesome/less/font-awesome.less";
+
+/*
+ * Base structure
+ */
+
+body{
+    /* Move down content because we have a fixed navbar that is 50px tall */
+    padding-top: 60px;
+    background: @darkwhite;
+    color: #3B3B41;
+    //font-family: 'Open Sans',sans-serif;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 400;
+}
+
+
+table tr td{
+    .animation(background-color,0.2s);
+}
+
+
+/*
+ * Main content
+ */
+
+.main {
+   //margin-top: 15px;
+   padding: 20px;
+}
+@media (min-width: 768px) {
+  .main {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+}
+.main .page-header {
+  margin-top: 0;
+}
+
+a.nostyle{
+    color:inherit;
+    text-decoration:inherit;
+}
+.lighter{ font-weight:lighter}
+.middle{vertical-align:middle}
+.inline{display: inline-block!important;}
+.no-margin{margin: 0!important;}
+.no-radius{border-radius: 0!important;}
+.progress {
+    border-radius: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    background: #DADADA;
+    height: 18px;
+}
+
+fluid{
+    float:left;
+    width:auto;
+}
+fluid-2{
+    float:left;
+    width:50%;
+}
+

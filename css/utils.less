@@ -1,0 +1,37 @@
+.border-radius(@radius:3px){
+    -webkit-border-radius: @radius;
+    -moz-border-radius: @radius;
+    -ms-border-radius: @radius;
+    -o-border-radius: @radius;
+    border-radius: @radius;
+}
+
+.box-sizing(@sizing:border-box){
+    -webkit-box-sizing: @sizing;
+    -moz-box-sizing: @sizing;
+    box-sizing: @sizing;
+}
+
+.scale(@scale:1){
+    -webkit-transform: scale(@scale);
+    -ms-transform: scale(@scale);
+    transform: scale(@scale);
+}
+
+.opacity(@opacity:1){
+    -moz-opacity: @opacity;
+    -khtml-opacity: @opacity;
+    -webkit-opacity: @opacity;
+    opacity: @opacity;
+    @opperc: @opacity * 100;
+    -ms-filter: ~"progid:DXImageTransform.Microsoft.Alpha(opacity=@{opperc})";
+    filter: ~"alpha(opacity=@{opperc})";
+}
+
+.rotate(@angle:180deg){
+    -moz-transform:rotate(@angle);
+    -webkit-transform:rotate(@angle);
+    -o-transform:rotate(@angle);
+    -ms-transform:rotate(@angle);
+    filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=1.5);
+}
